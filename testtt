@@ -1,0 +1,25 @@
+import random
+import time
+
+#This is a function that makes it more readable
+# by making the code wait a second or 2 
+def holdup(timetowait):
+    time.sleep(timetowait)
+    return
+
+#simplifies something that existed only because a lot of loops existed. 
+def enter(time):
+    holdup(time)
+    print(" ")
+    holdup(time)
+
+
+print("say hi: ")
+enter(.5)
+hi = input("")
+enter(.25)
+if (hi == "hi"):
+    holdup(.75)
+    print("HII")
+    enter(10)
+    print("hdnsj")
